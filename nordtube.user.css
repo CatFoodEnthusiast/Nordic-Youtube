@@ -1,3 +1,4 @@
+@-moz-document domain("youtube.com") {
 /* ==UserStyle==
 @name         nordtube
 @description  youtube theme based on the nord colorscheme
@@ -11,31 +12,58 @@
 ==/UserStyle== */
 
 #container.ytd-masthead {
-    background-color: #15181e
+    background-color: #2E3440
 }
 
 ytd-watch-flexy[flexy][is-two-columns_] #columns.ytd-watch-flexy {
-    background-color: #15181e
+    background-color: #2E3440
 }
 
-#like-button {
-    color: #5e81ac
+ytd-toggle-button-renderer.style-default-active[is-icon-button] {
+    color: #A3BE8C;
 }
 
 paper-button.ytd-subscribe-button-renderer[subscribed] {
     color: #d8dee9;
     background-color: #4c566a;
-    border-radius: 0px;
+    border-radius: 5px;
 }
 
 paper-button.ytd-subscribe-button-renderer {
     background-color: #5e81ac;
     color: #d8dee9;
-    border-radius: 0px;
+    border-radius: 5px;
 }
 
 ytd-subscription-notification-toggle-button-renderer #button.ytd-subscription-notification-toggle-button-renderer {
     color: #d8dee9
+}
+
+#channel-header.ytd-c4-tabbed-header-renderer {
+    background-color: #2E3440;
+}
+
+#search-icon-legacy.ytd-searchbox:hover {
+    background-color: #5E81AC;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0);
+}
+
+#search-icon-legacy.ytd-searchbox {
+    color: #D8DEE9;
+    border: none;
+}
+
+/*Youtube Logo*/
+yt-icon.ytd-topbar-logo-renderer {
+    color: #D8DEE9 !important;
+}
+
+polygon.style-scope.yt-icon {
+    fill: #ECEFF4;
+}
+
+#logo-icon > svg > g > g:nth-child(1) > path{
+    fill: #88C0D0;
 }
 
 .sbsb_a, .sbdd_b {
@@ -43,13 +71,54 @@ ytd-subscription-notification-toggle-button-renderer #button.ytd-subscription-no
 }
 
 #container.ytd-searchbox {
-    background-color: #2e3340;
+    background-color: #3B4252;
     color: #d8dee9;
     BORDER: NONE;
 }
 
+ytd-playlist-sidebar-renderer {
+    background-color: #2E3440;
+}
+
+#contents > ytd-item-section-renderer{
+    background:#2E3440
+}
+
+ytd-alert-with-button-renderer[type=INFO], ytd-alert-with-button-renderer[type=SUCCESS] {
+    background-color: #3B4252;
+}
+
+.header.ytd-playlist-panel-renderer {
+    background-color: #3B4252;
+}
+
+.playlist-items.ytd-playlist-panel-renderer {
+    background-color: #3B4252;
+}
+
+#playlist-items:hover{
+    background:#2E3440;
+    box-shadow:none;
+}
+
+ytd-toggle-button-renderer.style-grey-text[is-icon-button] {
+    color: #5E81AC;
+}
+
+html{
+    background:red
+}
+
+#container.ytd-searchbox input.ytd-searchbox {
+    color: #d8dee9;
+}
+
+ytd-app[standardized-themed-scrollbar] #guide-inner-content.ytd-app {
+    background: #2E3440;
+}
+
 #search-icon-legacy.ytd-searchbox {
-    background-color: #2e3340
+    background-color: #3B4252
 }
 
 #search-icon-legacy.ytd-searchbox {
@@ -65,8 +134,8 @@ ytd-subscription-notification-toggle-button-renderer #button.ytd-subscription-no
     BACKGROUND-COLOR: #5E81AC
 }
 
-ytd-toggle-button-renderer.force-icon-button a.ytd-toggle-button-renderer {
-    color: #5e81ac
+ytd-toggle-button-renderer.style-text[is-icon-button] {
+    color: #5e81ac;
 }
 
 ytd-toggle-button-renderer.style-text[is-icon-button] #text.ytd-toggle-button-renderer {
@@ -90,7 +159,7 @@ ytd-button-renderer.style-text[is-icon-button] #text.ytd-button-renderer, ytd-bu
 }
 
 #chat-messages.yt-live-chat-renderer, #contents.yt-live-chat-renderer, #item-list.yt-live-chat-renderer {
-    background-color: #15181e
+    background-color: #2E3440
 }
 
 #contentWrapper.tp-yt-iron-dropdown > * {
@@ -114,19 +183,102 @@ ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-re
 }
 
 a.ytd-rich-metadata-renderer {
-    background-color: #15181e
+    background-color: #2E3440
+}
+
+#progress.ytd-thumbnail-overlay-resume-playback-renderer {
+    background-color: #81A1C1;
+}
+
+.more-button.ytd-comment-renderer, .less-button.ytd-comment-renderer {
+    color: #4C566A;
+}
+
+ytd-thumbnail-overlay-resume-playback-renderer {
+    background-color: #434C5E;
 }
 
 #chips.yt-chip-cloud-renderer {
-    display: none;
+    background:#2E3440
+}
+
+yt-chip-cloud-chip-renderer[chip-style=STYLE_DEFAULT], yt-chip-cloud-chip-renderer[chip-style=STYLE_HOME_FILTER], yt-chip-cloud-chip-renderer[chip-style=STYLE_REFRESH_TO_NOVEL_CHIP] {
+    background-color: #3B4252;
+    border: 1px solid #4C566A;
+    color: #ECEFF4;
+}
+
+yt-chip-cloud-chip-renderer[chip-style=STYLE_DEFAULT][selected], yt-chip-cloud-chip-renderer[chip-style=STYLE_HOME_FILTER][selected] {
+    background-color: #ECEFF4;
+    border-color: #4C566A;
+    color: #2E3440;
+}
+
+yt-chip-cloud-chip-renderer[chip-style=STYLE_DEFAULT][selected]:hover, yt-chip-cloud-chip-renderer[chip-style=STYLE_HOME_FILTER][selected]:hover, yt-chip-cloud-chip-renderer[chip-style=STYLE_DEFAULT][selected]:focus, yt-chip-cloud-chip-renderer[chip-style=STYLE_HOME_FILTER][selected]:focus {
+    background-color: #4C566A;
+}
+
+yt-chip-cloud-chip-renderer[chip-style=STYLE_DEFAULT]:not([selected]):hover, yt-chip-cloud-chip-renderer[chip-style=STYLE_HOME_FILTER]:not([selected]):hover, yt-chip-cloud-chip-renderer[chip-style=STYLE_REFRESH_TO_NOVEL_CHIP]:not([selected]):hover, yt-chip-cloud-chip-renderer[chip-style=STYLE_DEFAULT]:not([selected]):focus, yt-chip-cloud-chip-renderer[chip-style=STYLE_HOME_FILTER]:not([selected]):focus, yt-chip-cloud-chip-renderer[chip-style=STYLE_REFRESH_TO_NOVEL_CHIP]:not([selected]):focus {
+    background-color: #4C566A;
+}
+
+yt-chip-cloud-renderer {
+    background-color: #2E3440;
+}
+
+#left-arrow-button.yt-chip-cloud-renderer, #right-arrow-button.yt-chip-cloud-renderer {
+    background: #2E3440;
+}
+
+#chips-wrapper.ytd-feed-filter-chip-bar-renderer {
+    background-color: #2E3440;
+    border-top: 1px solid #2E3440;
+    border-bottom: 1px solid #2E3440;
+}
+
+ytd-searchbox[has-focus] #container.ytd-searchbox {
+    border: 1px solid #5E81AC;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0);
+}
+
+yt-chip-cloud-renderer[is-dark-theme] #right-arrow.yt-chip-cloud-renderer:before {
+    background: -webkit-gradient(linear, right top, left top, color-stop(10%, #2E3440), color-stop(90%, rgba(46, 52, 64, 0)));
+    background: -webkit-linear-gradient(right, #2E3440 10%, rgba(46, 52, 64, 0) 90%);
+    background: linear-gradient(to left, #2E3440 10%, rgba(46, 52, 64, 0) 90%);
+}
+
+yt-chip-cloud-renderer[is-dark-theme] #left-arrow.yt-chip-cloud-renderer:after {
+    background: -webkit-gradient(linear, left top, right top, color-stop(10%, #2E3440), color-stop(90%, rgba(46, 52, 64, 0)));
+    background: -webkit-linear-gradient(left, #2E3440 10%, rgba(46, 52, 64, 0) 90%);
+    background: linear-gradient(to right, #2E3440 10%, rgba(46, 52, 64, 0) 90%);
+}
+
+ytd-feed-filter-chip-bar-renderer[is-dark-theme] #right-arrow.ytd-feed-filter-chip-bar-renderer:before {
+    background: linear-gradient(to left, #2E3440 20%, rgba(46, 52, 64, 0) 80%);
+}
+
+ytd-feed-filter-chip-bar-renderer[is-dark-theme] #left-arrow.ytd-feed-filter-chip-bar-renderer:after {
+    background: linear-gradient(to right, #2E3440 20%, rgba(46, 52, 64, 0) 80%);
+}
+
+#left-arrow-button.ytd-feed-filter-chip-bar-renderer, #right-arrow-button.ytd-feed-filter-chip-bar-renderer {
+    background-color: #2E3440;
+}
+
+ytd-guide-entry-renderer[active] {
+    background-color: #3B4252;
+}
+
+ytd-guide-entry-renderer:hover{
+    background-color:#2E3440
 }
 
 ytd-thumbnail #thumbnail.ytd-thumbnail {
-    border-radius: 0px;
+    border-radius: 5px;
 }
 
 ytd-thumbnail.ytd-rich-grid-media, ytd-thumbnail.ytd-rich-grid-media::before {
-    border-radius: 0px;
+    border-radius: 5px;
 }
 
 yt-icon.ytd-badge-supported-renderer {
@@ -161,18 +313,18 @@ ytd-author-comment-badge-renderer{
 }
 
 #channel-header.ytd-c4-tabbed-header-renderer, #channel-header.ytd-c4-tabbed-header-renderer{
-    color: #15181e !important;
+    color: #2E3440 !important;
 }
 #channel-container.ytd-c4-tabbed-header-renderer, #tabs-container.ytd-c4-tabbed-header-renderer {
-    color:#15181e;
+    color:#2E3440;
 }
 
 ytd-menu-popup-renderer {
-    border-radius: 0px;
+    border-radius: 5px;
 }
 
 tp-yt-paper-listbox {
-    background-color: #15181e;
+    background-color: #2E3440;
 }
 
 yt-icon.ytd-menu-service-item-renderer {
@@ -180,15 +332,15 @@ yt-icon.ytd-menu-service-item-renderer {
 }
 
 #chips.ytd-feed-filter-chip-bar-renderer, ytd-feed-filter-chip-bar-renderer {
-    display: none;
+    background:#2E3440;
 }
 
 ytd-rich-grid-renderer {
-    background-color: #15181e
+    background-color: #2E3440
 }
 
 .html5-video-player.ytp-autonav-endscreen-cancelled-state {
-    border-radius: 0px;
+    border-radius: 5px;
 }
 
 #content.ytd-rich-section-renderer > .ytd-rich-section-renderer {
@@ -196,7 +348,7 @@ ytd-rich-grid-renderer {
 }
 
 ytd-mini-guide-renderer.ytd-app {
-    background-color: #15181e
+    background-color: #2E3440
 }
 
 ytd-watch-flexy[flexy][is-two-columns_] #columns.ytd-watch-flexy {
@@ -205,11 +357,11 @@ ytd-watch-flexy[flexy][is-two-columns_] #columns.ytd-watch-flexy {
 }
 
 ytd-watch-flexy[flexy][flexy-large-window_]:not([is-extra-wide-video_]), ytd-watch-flexy[flexy][flexy-large-window_][transcript-opened_][is-two-columns_]:not([is-extra-wide-video_]), ytd-watch-flexy[flexy][flexy-large-window_][playlist][is-two-columns_]:not([is-extra-wide-video_]), ytd-watch-flexy[flexy][flexy-large-window_][should-stamp-chat][is-two-columns_]:not([is-extra-wide-video_]) {
-    background-color: #15181e
+    background-color: #2E3440
 }
 
 .ytp-videowall-still-image {
-    border-radius: 0px;
+    border-radius: 5px;
 }
 
 ytd-live-chat-frame {
@@ -222,11 +374,11 @@ ytd-live-chat-frame {
 }
 
 ytd-button-renderer.style-suggestive[is-paper-button]  {
-    border-radius: 0px;
+    border-radius: 5px;
 }
 
 .fit.tp-yt-paper-dialog-scrollable, #top-bar.ytd-sponsorships-offer-renderer {
-    background-color: #15181e
+    background-color: #2E3440
 }
 
 yt-button-renderer #button.yt-button-renderer {
@@ -238,23 +390,25 @@ yt-button-renderer #button.yt-button-renderer {
 }
 
 yt-button-renderer.style-primary[is-paper-button] {
-    border-radius: 0px;
+    border-radius: 5px;
 }
 
 .fit.tp-yt-paper-dialog-scrollable  {
-    border-radius: 0px;
+    border-radius: 5px;
 }
 
 a.yt-simple-endpoint.yt-formatted-string {
-    color: #5e81ac
+    color: #8FBCBB
 }
 
 a.yt-simple-endpoint.yt-formatted-string:hover {
-    color: #81a1c1
+    color: #8FBCBB;
+    text-decoration: underline;
+    
 }
 
 ytd-simple-menu-header-renderer {
-    background-color: #15181e
+    background-color: #2E3440
 }
 
 #text.ytd-channel-name, #metadata-line.ytd-video-meta-block span.ytd-video-meta-block {
@@ -270,7 +424,7 @@ ytd-simple-menu-header-renderer {
 }
 
 .badge-style-type-simple.ytd-badge-supported-renderer {
-    border-radius: 0px;
+    border-radius: 5px;
 }
 
 #country-code.ytd-topbar-logo-renderer {
@@ -279,14 +433,6 @@ ytd-simple-menu-header-renderer {
 
 ytd-author-comment-badge-renderer[creator] {
     background-color: #2e3340
-}
-
-#like-button.ytd-comment-action-buttons-renderer {
-    color: #5e81ac
-}
-
-#dislike-button.ytd-comment-action-buttons-renderer {
-    color: #81a1c1
 }
 
 #label.ytd-pinned-comment-badge-renderer, yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string {
@@ -311,21 +457,21 @@ ytd-commentbox {
 
 ytd-button-renderer.style-primary[is-paper-button] {
     background-color: #2e3340;
-    border-radius: 0px;
+    border-radius: 5px;
 }
 
 #sections.ytd-guide-renderer > ytd-guide-section-renderer.ytd-guide-renderer:not(:first-child), #sections.ytd-guide-renderer > ytd-guide-subscriptions-section-renderer.ytd-guide-renderer {
-    background-color: #15181e;
+    background-color: #2E3440;
     border-bottom: none;
 }
 
 #sections.ytd-guide-renderer > .ytd-guide-renderer:not(:last-child) {
-    background-color: #15181e;
+    background-color: #2E3440;
     border-bottom: none;
 }
 
 ytd-app:not([background-color-update_]) tp-yt-app-drawer.ytd-app:not([persistent]).ytd-app #header.ytd-app {
-    background-color: #15181e;
+    background-color: #2E3440;
     border-bottom: none;
 }
 
@@ -338,7 +484,7 @@ ytd-app:not([background-color-update_]) tp-yt-app-drawer.ytd-app:not([persistent
 }
 
 #guide-links-primary.ytd-guide-renderer, #guide-links-secondary.ytd-guide-renderer, #footer.ytd-guide-renderer > #copyright {
-    background-color: #15181e
+    background-color: #2E3440
 }
 
 #footer.ytd-guide-renderer > #copyright, #guide-links-primary.ytd-guide-renderer > a, #guide-links-secondary.ytd-guide-renderer > a, .metadata.ytd-notification-renderer {
@@ -347,7 +493,7 @@ ytd-app:not([background-color-update_]) tp-yt-app-drawer.ytd-app:not([persistent
 
 #contentWrapper.tp-yt-iron-dropdown > * {
     border: none;
-    border-radius: 0px;
+    border-radius: 5px;
 }
 
 ytd-simple-menu-header-renderer {
@@ -359,15 +505,15 @@ ytd-simple-menu-header-renderer {
 }
 
 channel-header.ytd-c4-tabbed-header-renderer {
-    background-color: #15181e !important
+    background-color: #2E3440 !important
 }
 
 #header.ytd-browse, #tabs-inner-container.ytd-c4-tabbed-header-renderer {
-    background-color: #15181e
+    background-color: #2E3440
 }
 
 ytd-page-manager > .ytd-page-manager {
-    background-color: #15181e
+    background-color: #2E3440
 }
 
 .tab-content.tp-yt-paper-tab, tp-yt-paper-tab.iron-selected.ytd-c4-tabbed-header-renderer {
@@ -375,7 +521,7 @@ ytd-page-manager > .ytd-page-manager {
 }
 
 ytd-playlist-thumbnail #thumbnail.ytd-playlist-thumbnail {
-    border-radius: 0px;
+    border-radius: 5px;
 }
 
 #metadata.ytd-channel-renderer, #description.ytd-channel-renderer, #subscriber-count.ytd-c4-tabbed-header-renderer {
@@ -388,7 +534,7 @@ ytd-backstage-post-thread-renderer {
 
 .progress-bar.ytd-backstage-poll-renderer {
     background-color: #4c556a;
-    border-radius: 0px;
+    border-radius: 5px;
 }
 
 ytd-backstage-poll-renderer[show-poll-choice-border] tp-yt-paper-item.ytd-backstage-poll-renderer[show-percentage] .choice-info.ytd-backstage-poll-renderer {
@@ -400,8 +546,8 @@ yt-icon.checked.ytd-backstage-poll-renderer {
 }
 
 tp-yt-paper-item.ytd-backstage-poll-renderer[selected] .progress-bar.ytd-backstage-poll-renderer {
-    background-color: #15181e;
-    border-radius: 0px;
+    background-color: #2E3440;
+    border-radius: 5px;
 }
 
 yt-icon.ytd-backstage-poll-renderer, #vote-info.ytd-backstage-poll-renderer {
@@ -410,4 +556,5 @@ yt-icon.ytd-backstage-poll-renderer, #vote-info.ytd-backstage-poll-renderer {
 
 ytd-backstage-poll-renderer[show-poll-choice-border] .choice-info.ytd-backstage-poll-renderer {
     border: none;
+}
 }
