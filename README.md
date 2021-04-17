@@ -9,20 +9,24 @@
 
 >Youtube Nord theme
 
-* Removed ugly rounding on video player and thumbnails.
-* Changed PFPs Border to 5px because modern design bad.
-* Darkened background (technically not in nord color pallete, I dont care)
-* Search bar now different color.
+* Set the rounding on video player and thumbnails to 5px.
+* Changed the back the background to #2E3440.
+* Like buttons now change color when clicked.
+* Changed the color of the youtube logo.
+* Youtube recommended things are not hidden anymore
+* Some minor changes
 
 
 ## installation
 
 The only thing you need to have installed is the [stylus](https://github.com/openstyles/stylus) browser extension
 
-[click here to install nordtube](https://github.com/MajesticWaffle/nordtube/raw/main/nordtube.user.css)
+[click here to install nordtube](https://github.com/CatFoodEnthusiast/Youtube-Nord-Theme/raw/main/nordtube.user.css)
 
 
 ## Author
+
+[Majestic Waffle](https://github.com/MajesticWaffle)
 
 Original:
 **sheep**
