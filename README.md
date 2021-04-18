@@ -26,7 +26,7 @@ The only thing you need to have installed is the [stylus](https://github.com/ope
 
 ## Author
 
-[Majestic Waffle](https://github.com/MajesticWaffle)
+fork: [Majestic Waffle](https://github.com/MajesticWaffle)
 
 Original:
 **sheep**
