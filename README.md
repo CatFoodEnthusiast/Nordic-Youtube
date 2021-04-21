@@ -1,5 +1,5 @@
 
-<h1 align="center">nordtube</h1>
+<h1 align="center">Nordic Youtube</h1>
 <p>
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
