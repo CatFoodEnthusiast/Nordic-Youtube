@@ -14,6 +14,7 @@
 * Youtube recommended things are not hidden anymore
 * Some minor changes
 
+This theme currently only works on dark mode
 
 ## installation
 
