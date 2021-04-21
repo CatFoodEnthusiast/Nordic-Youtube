@@ -15,6 +15,10 @@
     background-color: #2E3440
 }
 
+ytd-app {
+    background: #2E3440;
+}
+
 ytd-watch-flexy[flexy][is-two-columns_] #columns.ytd-watch-flexy {
     background-color: #2E3440
 }
@@ -105,10 +109,6 @@ ytd-toggle-button-renderer.style-grey-text[is-icon-button] {
     color: #5E81AC;
 }
 
-html{
-    background:red
-}
-
 #container.ytd-searchbox input.ytd-searchbox {
     color: #d8dee9;
 }
@@ -158,8 +158,34 @@ ytd-button-renderer.style-text[is-icon-button] #text.ytd-button-renderer, ytd-bu
     color: #d8dee9
 }
 
+ytd-merch-shelf-renderer {
+    border-bottom: 1px solid #2E3440;
+    background-color: #2E3440;
+}
+
+.arrow.ytd-merch-shelf-renderer {
+    background-color: #3B4252;
+    color: #D8DEE9;
+    box-shadow: none;
+}
+
+yt-icon.ytd-merch-shelf-item-renderer,
+.product-item-merchant-text.ytd-merch-shelf-item-renderer{
+    color: #8FBCBB;
+}
+
 #chat-messages.yt-live-chat-renderer, #contents.yt-live-chat-renderer, #item-list.yt-live-chat-renderer {
     background-color: #2E3440
+}
+
+ytd-button-renderer.style-suggestive[is-paper-button] tp-yt-paper-button.ytd-button-renderer {
+    border: none;
+}
+
+tp-yt-paper-button.ytd-subscribe-button-renderer[subscribed] {
+    background-color: #3B4252;
+    border-radius:5px;
+    color: #D8DEE9;
 }
 
 #contentWrapper.tp-yt-iron-dropdown > * {
@@ -290,6 +316,18 @@ yt-icon.ytd-badge-supported-renderer {
 }
 #avatar.ytd-video-owner-renderer{
     border-radius: 5px;
+}
+
+ytd-two-column-browse-results-renderer[page-subtype=history] #secondary.ytd-two-column-browse-results-renderer {
+    background-color: #3B4252;
+}
+
+tp-yt-paper-radio-button[checked] #offRadio.tp-yt-paper-radio-button{
+    border-color: #88C0D0;
+}
+
+#onRadio.tp-yt-paper-radio-button{
+    background-color: #88C0D0;
 }
 
 #avatar.ytd-active-account-header-renderer{
