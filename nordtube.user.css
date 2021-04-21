@@ -283,6 +283,10 @@ ytd-feed-filter-chip-bar-renderer[is-dark-theme] #right-arrow.ytd-feed-filter-ch
     background: linear-gradient(to left, #2E3440 20%, rgba(46, 52, 64, 0) 80%);
 }
 
+#newness-dot.ytd-guide-entry-renderer{
+    background-color:#88C0D0;
+}
+
 ytd-feed-filter-chip-bar-renderer[is-dark-theme] #left-arrow.ytd-feed-filter-chip-bar-renderer:after {
     background: linear-gradient(to right, #2E3440 20%, rgba(46, 52, 64, 0) 80%);
 }
@@ -320,6 +324,23 @@ yt-icon.ytd-badge-supported-renderer {
 
 ytd-two-column-browse-results-renderer[page-subtype=history] #secondary.ytd-two-column-browse-results-renderer {
     background-color: #3B4252;
+}
+
+yt-live-chat-message-input-renderer{
+    background:#2E3440
+}
+
+#card.yt-live-chat-viewer-engagement-message-renderer{
+    background-color: #3B4252
+}
+
+#menu.yt-live-chat-text-message-renderer {
+    color: #D8DEE9;
+    background: linear-gradient(to right, transparent 0%, #2E3440, #2E3440 100%);
+}
+
+yt-live-chat-header-renderer{
+    background-color: #2E3440
 }
 
 tp-yt-paper-radio-button[checked] #offRadio.tp-yt-paper-radio-button{
@@ -420,11 +441,8 @@ ytd-button-renderer.style-suggestive[is-paper-button]  {
 }
 
 yt-button-renderer #button.yt-button-renderer {
-    background-color: #81a1c1
-}
-
-yt-button-renderer #button.yt-button-renderer {
-    color: #d8dee9
+    background-color: #81a1c1;
+    color: #d8dee9;
 }
 
 yt-button-renderer.style-primary[is-paper-button] {
