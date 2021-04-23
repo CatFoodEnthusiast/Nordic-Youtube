@@ -11,8 +11,11 @@
 * Changed the back the background to #2E3440.
 * Like buttons now change color when clicked.
 * Changed the color of the youtube logo.
-* Youtube recommended things are not hidden anymore
-* Some minor changes
+* These things are not hidden anymore:
+
+![image](https://user-images.githubusercontent.com/71100842/115938445-0eb5fe80-a471-11eb-8846-fceb1fb93efc.png)
+* Youtube videos that you've watched before have a blue progressbar on the thumbnail instead of a red one.
+* Some minor changes.
 
 This theme currently only works on dark mode
 
